@@ -30,6 +30,17 @@ export default function DesktopView(
               className="arrow-icon"
             />
             {title}
+            <div className="right">
+              <Link
+                title={formatMessage({
+                  id: 'back-to-front-page',
+                  defaultMessage: 'Back to the front page',
+                })}
+                to={homeUrl}
+              >
+                <Icon img="icon-icon_close" className="medium" />
+              </Link>
+            </div>
           </h2>
         </div>
         <div
